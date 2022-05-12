@@ -6,13 +6,13 @@
 #ifndef NO_X
 #include<X11/Xlib.h>
 #endif
-#ifdef __OpenBSD__
-#define SIGPLUS			SIGUSR1+1
-#define SIGMINUS		SIGUSR1-1
-#else
-#define SIGPLUS			SIGRTMIN
-#define SIGMINUS		SIGRTMIN
-#endif
+/* #ifdef __OpenBSD__ */
+/* #define SIGPLUS			SIGUSR1+1 */
+/* #define SIGMINUS		SIGUSR1-1 */
+/* #else */
+/* #define SIGPLUS			SIGRTMIN */
+/* #define SIGMINUS		SIGRTMIN */
+/* #endif */
 
 /* Custom signals based on SIGUSR1 */
 #define SIGPLUS			SIGUSR1+1
